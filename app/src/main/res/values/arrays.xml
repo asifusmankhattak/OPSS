@@ -1,0 +1,74 @@
+<resources>
+    <!-- Major Activity Options -->
+    <string-array name="spn_major_activity_education">
+        <item>Pre-primary education</item>
+        <item>Primary education</item>
+        <item>Secondary education</item>
+        <item>Higher education</item>
+        <item>Sports and recreation education</item>
+        <item>Cultural education</item>
+        <item>Other education n.e.c. (Academies, driving schools, computer training, etc.)</item>
+        <item>Educational support activities (Testing, etc.)</item>
+        <item>Technical and vocational secondary education</item>
+    </string-array>
+
+    <string-array name="spn_major_activity_health">
+        <item>Hospital activities</item>
+        <item>Medical and dental practice activities</item>
+        <item>Other human health activities (medical laboratories, blood banks etc.)</item>
+        <item>Residential Nursing Care Facilities</item>
+        <item>Residential care activities for mental retardation, mental health and substance abuse</item>
+        <item>Social work activities without accommodation for the elderly and disabled</item>
+        <item>Other social work activities without accommodation</item>
+    </string-array>
+
+    <string-array name="spn_major_activity_publishing">
+        <item>Book publishing</item>
+        <item>Publishing of directories and mailing lists</item>
+        <item>Publishing of newspapers, journals and periodicals</item>
+        <item>Other publishing activities</item>
+        <item>Software publishing</item>
+        <item>Computer programming activities</item>
+        <item>Computer consultancy and computer facilities management activities</item>
+        <item>Other information technology and computer service activities</item>
+        <item>Data processing, hosting and related activities</item>
+        <item>Web portals</item>
+        <item>News agency activities</item>
+        <item>Other information service activities n.e.c.</item>
+    </string-array>
+
+    <string-array name="spn_major_activity_personal_services">
+        <item>Washing and (dry-) cleaning of textile and fur products</item>
+        <item>Hairdressing and other beauty treatment</item>
+        <item>Other personal service activities n.e.c. (e.g. shoe shiners, etc.)</item>
+        <item>Funeral and Related Activities</item>
+    </string-array>
+
+    <string-array name="spn_major_activity_accommodation_food">
+        <item>Short term accommodation activities</item>
+        <item>Camping grounds, recreational vehicle parks and trailer parks</item>
+        <item>Other accommodation</item>
+        <item>Restaurants and mobile food service activities</item>
+        <item>Event catering</item>
+        <item>Other food service activities</item>
+        <item>Beverage serving activities</item>
+    </string-array>
+
+    <!-- Organization Type Options -->
+    <string-array name="spn_organization_type">
+        <item>Individual Ownership</item>
+        <item>Partnership</item>
+        <item>Private Ltd. Co.</item>
+        <item>Public Ltd. Co.</item>
+        <item>Cooperative</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="spn_survey_type">
+        <item>Select Survey</item>
+        <item>Survey on Education</item>
+        <item>Survey on Human Health and Social Work Activities</item>
+        <item>Publishing and Software Development Activities</item>
+        <item>Survey on Other Personal Service Activities</item>
+        <item>Study on Accommodation and Food Services</item>
+    </string-array>
+</resources>

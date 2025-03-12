@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent_drawer"
+    tools:context="pbs.sme.survey.activity.BaseActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="@style/hr_form_scroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_household"/>
+
+                <TextView
+                    style="@style/summary_txt_lg"
+                    android:layout_width="match_parent"
+                    android:text="Baseline Form" />
+
+                <LinearLayout
+                    style="@style/smp_container_hr"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+                <include layout="@layout/layout_form_buttons"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer"/>
+    </RelativeLayout>
+    <include layout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pbsSync"
+        android:icon="@drawable/ic_update"
+        android:title="Upload"/>
+    <item
+        android:id="@+id/pbsEdit"
+        android:icon="@drawable/ic_edit"
+        android:title="Edit"/>
+    <item
+        android:id="@+id/pbsDelete"
+        android:icon="@drawable/ic_close"
+        android:title="Delete"/>
+</menu>

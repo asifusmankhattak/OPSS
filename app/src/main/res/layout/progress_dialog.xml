@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/progress_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="?attr/padd"
+        android:background="?s_color"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="?attr/t_lg">
+    </TextView>
+
+    <TextView
+        android:id="@+id/progress_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="?attr/padd"
+        android:justificationMode="inter_word"
+        android:text=""
+        android:textSize="?attr/t_md"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="?attr/padd"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="?attr/padd"
+        android:paddingBottom="?attr/padd"
+        android:gravity="center_horizontal"
+        android:text="Please Wait..."
+        android:textSize="?attr/t_lg"/>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent_drawer"
+    tools:context="pbs.sme.survey.activity.S3Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="@style/hr_form_scroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_household"/>
+
+                <TextView
+                    style="@style/s_heading"
+                    android:layout_width="match_parent"
+                    android:text="SECTION-6   TAXES " />
+
+                <LinearLayout
+                    style="@style/smp_container_hr"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:weightSum="10"
+                        android:paddingVertical="?pad"
+                        android:background="?s_color">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="1.2"
+                            android:textColor="@color/white"
+                            android:text="Code"
+                            android:gravity="center_horizontal"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="6.8"
+                            android:text="Description"
+                            android:textColor="@color/white"
+                            android:gravity="left"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="2"
+                            android:textColor="@color/white"
+                            android:text="Value"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/hliner"
+                        android:weightSum="10">
+                        <TextView
+                            style="@style/summary_eng_c"
+                            android:text="601"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:text="General Sales Taxes" />
+                        <EditText
+                            android:id="@+id/value__601"
+                            android:inputType="number"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/hliner"
+                        android:weightSum="10">
+                        <TextView
+                            style="@style/summary_eng_c"
+                            android:text="602"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:text="Motor Vehicle Tax/Land Tax" />
+                        <EditText
+                            android:id="@+id/value__602"
+                            android:inputType="number"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/hliner"
+                        android:weightSum="10">
+                        <TextView
+                            style="@style/summary_eng_c"
+                            android:text="603"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:text="Excise/Import Duty" />
+                        <EditText
+                            android:id="@+id/value__603"
+                            android:inputType="number"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/hliner"
+                        android:weightSum="10">
+                        <TextView
+                            style="@style/summary_eng_c"
+                            android:text="604"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:text="Provincial/District taxes " />
+                        <EditText
+                            android:id="@+id/value__604"
+                            android:inputType="number"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/hliner"
+                        android:weightSum="10">
+                        <TextView
+                            style="@style/summary_eng_c"
+                            android:text="605"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:text="Other Taxes" />
+                        <EditText
+                            android:id="@+id/value__605"
+                            android:inputType="number"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/hliner"
+                        android:weightSum="10">
+                        <TextView
+                            style="@style/summary_eng_c"
+                            android:text="606"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:text="Depreciation" />
+                        <EditText
+                            android:id="@+id/value__606"
+                            android:inputType="number"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/hliner"
+                        android:weightSum="10">
+                        <TextView
+                            style="@style/summary_eng_c"
+                            android:text="600"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:text="Total" />
+                        <EditText
+                            android:id="@+id/value__600"
+                            android:inputType="number"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_form_buttons"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

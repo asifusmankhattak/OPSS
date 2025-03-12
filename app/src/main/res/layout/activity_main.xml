@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pbs.sme.survey.activity.MainActivity"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:layout_marginBottom="@dimen/dimen_25"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/dimen_250"
+            android:layout_height="@dimen/dimen_150"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/pbslogob" />
+
+        <TextView
+            style="@style/head_cnt"
+            android:fontFamily="@font/urdu"
+            android:text="@string/survey_desc"
+            android:textColor="?attr/s_color" />
+
+        <TextView
+            android:id="@+id/t_census"
+            style="@style/head_cnt"
+            android:textColor="?attr/s_color"
+            android:fontFamily="@font/urdu"
+            android:layout_marginTop="-10dp"
+            android:text="@string/app_name"/>
+        <TextView
+            android:id="@+id/t_version"
+            style="@style/head_cnt"
+            android:layout_marginTop="-10dp"
+            android:text=""/>
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="337dp"
+            android:layout_marginBottom="109dp"
+            android:src="@drawable/opss2" />
+
+    </LinearLayout>
+
+    <include layout="@layout/footer"/>
+</RelativeLayout>

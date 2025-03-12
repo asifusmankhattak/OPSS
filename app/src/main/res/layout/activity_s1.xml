@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent_drawer"
+    tools:context="pbs.sme.survey.activity.S1Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="@style/hr_form_scroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_household"/>
+
+                <TextView
+                    style="@style/summary_txt_lg"
+                    android:layout_width="match_parent"
+
+                    android:text="SECTION -1 (PARTICULARS OF ESTABLISHMENT)" />
+
+                <LinearLayout
+                    style="@style/smp_container_hr"
+                    android:orientation="vertical">
+                    <LinearLayout style="@style/vliner">
+                        <TextView style="@style/q_heading" android:text="Building of Establishment:"/>
+                        <RadioGroup android:id="@+id/building_establishment" style="@style/rdg" android:layout_width="match_parent" android:weightSum="5">
+                            <RadioButton android:id="@+id/building_establishment1" style="@style/rd_yesno" android:text="Owned"/>
+                            <RadioButton android:id="@+id/building_establishment2" style="@style/rd_yesno" android:text="Leased"/>
+                            <RadioButton android:id="@+id/building_establishment3" style="@style/rd_yesno" android:text="Rented"/>
+
+                            <RadioButton
+                                android:id="@+id/building4"
+                                style="@style/rd_yesno"
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:text="Temporary(Khoka etc.)" />
+
+                            <RadioButton
+                                android:id="@+id/building5"
+                                style="@style/rd_yesno"
+                                android:layout_width="154dp"
+                                android:layout_height="match_parent"
+                                android:text="Movable(Street Vendor)" />
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Title of Establishment"/>
+                        <EditText
+                            android:id="@+id/title"
+                            style="@style/edit_form_text"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ., "/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Name of Owner(s)/Proprietor(s): "/>
+                        <EditText
+                            android:id="@+id/owner"
+                            style="@style/edit_form_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Gender of owner"/>
+
+                        <RadioGroup
+                            android:id="@+id/gender"
+                            style="@style/rdg"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/gender1"
+                                style="@style/rd_yesno"
+                                android:text="Male" />
+
+                            <RadioButton
+                                android:id="@+id/gender2"
+                                style="@style/rd_yesno"
+                                android:text="Female" />
+
+                            <RadioButton
+                                android:id="@+id/gender3"
+                                style="@style/rd_yesno"
+                                android:hint="T"
+                                android:text="Joint" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Name of the Respondent: "/>
+                        <EditText
+                            android:id="@+id/name"
+                            style="@style/edit_form_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Designation of the Respondent: "/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/vliner">
+
+                        <RadioGroup
+                            android:id="@+id/respondent_designation"
+                            style="@style/rdg"
+                            android:layout_width="match_parent"
+                            android:weightSum="5">
+
+                            <RadioButton
+                                android:id="@+id/designation1"
+                                style="@style/rd_yesno"
+                                android:layout_width="116dp"
+                                android:text="Owner" />
+
+                            <RadioButton
+                                android:id="@+id/designation2"
+                                style="@style/rd_yesno"
+                                android:layout_width="218dp"
+                                android:text="Responsible Family Member" />
+
+                            <RadioButton
+                                android:id="@+id/designation3"
+                                style="@style/rd_yesno"
+                                android:layout_width="125dp"
+                                android:text="Manager" />
+
+                            <RadioButton
+                                android:id="@+id/designation4"
+                                style="@style/rd_yesno"
+                                android:layout_width="193dp"
+                                android:text="Other employee" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Enter Contact Number" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="8">
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/spinner_container">
+                                <Spinner
+                                    android:id="@+id/phone_type"
+                                    style="@style/spn_form"
+                                    android:entries="@array/spn_contact"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/spinner_container"
+                                android:layout_marginHorizontal="?padd">
+                                <Spinner
+                                    android:id="@+id/phone_code"
+                                    style="@style/spn_form"
+                                    android:entries="@array/spn_codes"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:visibility="gone"
+                                android:layout_width="0dp"
+                                android:layout_weight="6"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/spinner_container"
+                                android:layout_marginHorizontal="?padd">
+                                <Spinner
+                                    android:visibility="gone"
+                                    android:id="@+id/reason_no_phone"
+                                    style="@style/spn_form"
+                                    android:entries="@array/spn_reason"/>
+                            </RelativeLayout>
+                            <EditText
+                                android:visibility="gone"
+                                android:id="@+id/phone_code2"
+                                style="@style/edit_form"
+                                android:layout_weight="3"
+                                android:singleLine="true"
+                                android:maxLength="4"
+                                android:inputType="number"
+                                android:layout_marginHorizontal="?padd"/>
+                            <EditText
+                                android:id="@+id/phone_number"
+                                style="@style/edit_form"
+                                android:inputType="number"
+                                android:hint="Phone Number without Code"
+                                android:maxLength="7"
+                                android:layout_weight="3"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Email Address: "/>
+                        <EditText
+                            android:id="@+id/email"
+                            style="@style/edit_form_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Website: "/>
+                        <EditText
+                            android:id="@+id/website"
+                            style="@style/edit_form_text"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <include layout="@layout/layout_form_buttons"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer"/>
+    </RelativeLayout>
+    <include layout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

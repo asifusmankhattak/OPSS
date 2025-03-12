@@ -1,0 +1,1886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="pbs.sme.survey.activity.S4Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ScrollView to allow vertical scrolling -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="@style/hr_form_scroll">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Rent of Building -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="401. Rent of Building" />
+                        <EditText
+                            android:id="@+id/student_401"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_401"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_401"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Electricity Charges -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="402. Electricity Charges" />
+                        <EditText
+                            android:id="@+id/student_402"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_402"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_402"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Gas Charges -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="403. Gas Charges" />
+                        <EditText
+                            android:id="@+id/student_403"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_403"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_403"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Water Charges -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="404. Water Charges including expenditure on mineral water" />
+                        <EditText
+                            android:id="@+id/student_404"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_404"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_404"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <!-- Expenditure on Stationery and Office Supplies -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="405. Expenditure on Stationery and Office Supplies" />
+                        <EditText
+                            android:id="@+id/student_405"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_405"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_405"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Payment for Other Professional Services -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="406. Payment for Other Professional Services (e.g. architectural, engineering, surveying consultancy fees etc.)" />
+                        <EditText
+                            android:id="@+id/student_406"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_406"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_406"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Payment for Current Repair and Maintenance -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="407. Payment for Current Repair and Maintenance Work Done by Others on This Establishmentâ€™s Fixed Assets" />
+                        <EditText
+                            android:id="@+id/student_407"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_407"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_407"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Food Including Grocery -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="408. Expenditure on Food Including Grocery" />
+                        <EditText
+                            android:id="@+id/student_408"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_408"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_408"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Fuel and Lubricants -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="409. Fuel and Lubricants" />
+                        <EditText
+                            android:id="@+id/student_409"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_409"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_409"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Transportation Charges -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="410. Transportation Charges" />
+                        <EditText
+                            android:id="@+id/student_410"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_410"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_410"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Telephone/Fax -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="411. Telephone/Fax" />
+                        <EditText
+                            android:id="@+id/student_411"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_411"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_411"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Payment for Internet -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="412. Payment for Internet" />
+                        <EditText
+                            android:id="@+id/student_412"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_412"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_412"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <!-- Payment for Repair and Maintenance Work on Computer Equipment -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="413. Payment for Repair and Maintenance Work Done by Others on Computer Equipment" />
+                        <EditText
+                            android:id="@+id/student_413"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_413"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_413"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Payment for Data Processing and IT Services -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="414. Payment for Data Processing and Other Services Related to Information Technology" />
+                        <EditText
+                            android:id="@+id/student_414"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_414"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_414"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Payment for Software Installations -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="415. Payment for Software Installations" />
+                        <EditText
+                            android:id="@+id/student_415"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_415"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_415"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Payment on Leasing/Rental Services of ICT Equipment -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="416. Payment on Leasing/Rental Services of ICT Equipment" />
+                        <EditText
+                            android:id="@+id/student_416"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_416"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_416"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Minor Construction (Repair & Maintenance, Whitewash, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="417. Expenditure on Minor Construction (Repair and Maintenance, Whitewash, etc.)" />
+                        <EditText
+                            android:id="@+id/student_417"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_417"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_417"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Postage/Courier -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="418. Postage/Courier" />
+                        <EditText
+                            android:id="@+id/student_418"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_418"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_418"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Travel Expenses -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="419. Travel Expenses" />
+                        <EditText
+                            android:id="@+id/student_419"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_419"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_419"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Insurance Premium -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="420. Insurance Premium" />
+                        <EditText
+                            android:id="@+id/student_420"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_420"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_420"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Entertainment Charges -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="421. Entertainment Charges" />
+                        <EditText
+                            android:id="@+id/student_421"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_421"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_421"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Payment for Security Services -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="422. Payment for Security Services" />
+                        <EditText
+                            android:id="@+id/student_422"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_422"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_422"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Advertising and Promotion -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="423. Advertising and Promotion" />
+                        <EditText
+                            android:id="@+id/student_423"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_423"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_423"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="424.Other Expenditure 1" />
+                        <EditText
+                            android:id="@+id/student_424"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_424"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_424"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="425.Other Expenditure 2" />
+                        <EditText
+                            android:id="@+id/student_425"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_425"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_425"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/survey1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Expenditure on Printed Books, Pamphlets, Maps, and Globes -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="426. Expenditure on Printed Books, Pamphlets, Maps, and Globes" />
+                        <EditText
+                            android:id="@+id/student_1426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Register, Exercise Book, Note Book, etc. -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="427. Expenditure on Register, Exercise Book, Note Book, etc." />
+                        <EditText
+                            android:id="@+id/student_1427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Pen, Pencil, Fountain Pens, etc. -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="428. Expenditure on Pen, Pencil, Fountain Pens, etc." />
+                        <EditText
+                            android:id="@+id/student_1428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Sports Goods and Fair Ground Amusement Articles -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="429. Expenditure on Sports Goods and Fair Ground Amusement Articles" />
+                        <EditText
+                            android:id="@+id/student_1429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Garments and Clothing Accessories Including Uniforms for Students -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="430. Garments and Clothing Accessories Including Uniforms for Students" />
+                        <EditText
+                            android:id="@+id/student_1430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Medical Products Such as Medicaments and Laboratory Equipment -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="431. Medical Products Such as Medicaments and Laboratory Equipment" />
+                        <EditText
+                            android:id="@+id/student_1431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Hiring of Vehicles for Transport -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="432. Hiring of Vehicles for Transport" />
+                        <EditText
+                            android:id="@+id/student_1432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <!-- Scientific Journals Subscription Fee -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="433. Scientific Journals Subscription Fee" />
+                        <EditText
+                            android:id="@+id/student_1433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Accounting, Secretarial, and Audit Fee -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="434. Accounting, Secretarial, and Audit Fee" />
+                        <EditText
+                            android:id="@+id/student_1434"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1434"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1434"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Purchases of Gifts/Trophies -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="435. Expenditure on Purchases of Gifts/Trophies etc." />
+                        <EditText
+                            android:id="@+id/student_1435"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1435"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1435"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Food Payments Made to Other Company -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="436. Expenditure on Food Payments Made to Other Company w.r.t. Item 2.8 in Section-2" />
+                        <EditText
+                            android:id="@+id/student_1436"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1436"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1436"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Laundry Payments Made to Other Company -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="437. Expenditure on Laundry Payments Made to Other Company w.r.t. Item 2.8 in Section-2" />
+                        <EditText
+                            android:id="@+id/student_1437"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_1437"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_1437"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/survey2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Cost of Medicines Purchased -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="426. Cost of Medicines Purchased" />
+                        <EditText
+                            android:id="@+id/student_2426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Chemical Elements (such as Oxygen, Iodine, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="427. Chemical Elements (such as Oxygen, Iodine, etc.)" />
+                        <EditText
+                            android:id="@+id/student_2427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Inorganic Chemical Products (such as Hydrogen Peroxide, Teeth Filling, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="428. Inorganic Chemical Products (such as Hydrogen Peroxide, Teeth Filling, etc.)" />
+                        <EditText
+                            android:id="@+id/student_2428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Pharmaceutical Excluding Medicaments (such as Bandages, Plasters, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="429. Pharmaceutical Excluding Medicaments (such as Bandages, Plasters, etc.)" />
+                        <EditText
+                            android:id="@+id/student_2429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Artificial Plastic Materials (such as Alginic Acid, Polymers, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="430. Artificial Plastic Materials (such as Alginic Acid, Polymers, etc.)" />
+                        <EditText
+                            android:id="@+id/student_2430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Medical Instruments (such as Syringes, Disposable Items, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="431. Medical Instruments (such as Syringes, Disposable Items, etc.)" />
+                        <EditText
+                            android:id="@+id/student_2431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Orthopedic Appliances (such as Artificial Limbs, Teeth, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="432. Orthopedic Appliances (such as Artificial Limbs, Teeth, etc.)" />
+                        <EditText
+                            android:id="@+id/student_2432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Medical Product (such as Medicament, Vaccines, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="433. Medical Product (such as Medicament, Vaccines, etc.)" />
+                        <EditText
+                            android:id="@+id/student_2433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Accounting, Secretarial, and Audit Fee -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="434. Accounting, Secretarial, and Audit Fee" />
+                        <EditText
+                            android:id="@+id/student_2434"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2434"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2434"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Garment and Clothing Accessories -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="435. Garment and Clothing Accessories" />
+                        <EditText
+                            android:id="@+id/student_2435"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2435"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2435"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Other Expenditure (such as Gloves, Test Sticks, Herbs, Blood Bags, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="436. Other Expenditure (such as Gloves, Test Sticks, Herbs, Blood Bags, etc.)" />
+                        <EditText
+                            android:id="@+id/student_2436"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_2436"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_2436"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/survey3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Printing Materials -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="426. Printing Materials" />
+                        <EditText
+                            android:id="@+id/student_3426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_3426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_3426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Purchases of Miscellaneous ICT Components and Goods -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="427. Purchases of Miscellaneous ICT Components and Goods" />
+                        <EditText
+                            android:id="@+id/student_3427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_3427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_3427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Software License / Support Fees Paid -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="428. Software License / Support Fees Paid" />
+                        <EditText
+                            android:id="@+id/student_3428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_3428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_3428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Cleaning Material -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="429. Cleaning Material" />
+                        <EditText
+                            android:id="@+id/student_3429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_3429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_3429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Packaging Charges -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="430. Packaging Charges" />
+                        <EditText
+                            android:id="@+id/student_3430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_3430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_3430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Accounting, Secretarial, and Audit Fee -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="431. Accounting, Secretarial, and Audit Fee" />
+                        <EditText
+                            android:id="@+id/student_3431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_3431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_3431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Interest Paid -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="432. Interest Paid" />
+                        <EditText
+                            android:id="@+id/student_3432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_3432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_3432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Legal and Professional Expenses -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="433. Legal and Professional Expenses" />
+                        <EditText
+                            android:id="@+id/student_3433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_3433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_3433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/survey4"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Value of Materials/Inputs Purchased -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="426. Value of Materials/Inputs Purchased" />
+                        <EditText
+                            android:id="@+id/student_4426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_4426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_4426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Accounting, Secretarial, and Audit Fee -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="427. Accounting, Secretarial, and Audit Fee" />
+                        <EditText
+                            android:id="@+id/student_4427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_4427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_4427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Bank Charges -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="428. Bank Charges" />
+                        <EditText
+                            android:id="@+id/student_4428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_4428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_4428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Interest Paid -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="429. Interest Paid" />
+                        <EditText
+                            android:id="@+id/student_4429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_4429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_4429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Sports Goods (Balls, Bats, Rackets, Uniforms, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="430. Expenditure on Sports Goods (Balls, Bats, Rackets, Uniforms, etc.)" />
+                        <EditText
+                            android:id="@+id/student_4430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_4430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_4430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Uniforms -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="431. Expenditure on Uniforms" />
+                        <EditText
+                            android:id="@+id/student_4431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_4431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_4431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Legal and Professional Expenses (Stamp Papers, etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="432. Legal and Professional Expenses (Stamp Papers, etc.)" />
+                        <EditText
+                            android:id="@+id/student_4432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_4432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_4432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/survey5"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Bread and Cereals -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="426. Bread and Cereals" />
+                        <EditText
+                            android:id="@+id/student_5426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5426"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Rice -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="427. Rice" />
+                        <EditText
+                            android:id="@+id/student_5427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5427"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Meat (Beef, Mutton, Chicken) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="428. Meat (Beef, Mutton, Chicken)" />
+                        <EditText
+                            android:id="@+id/student_5428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5428"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Fish -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="429. Fish" />
+                        <EditText
+                            android:id="@+id/student_5429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5429"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Oils and Fats -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="430. Oils and Fats" />
+                        <EditText
+                            android:id="@+id/student_5430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5430"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Vegetables -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="431. Vegetables" />
+                        <EditText
+                            android:id="@+id/student_5431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5431"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Fruit and Nuts -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="432. Fruit and Nuts" />
+                        <EditText
+                            android:id="@+id/student_5432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5432"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Sugar -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="433. Sugar" />
+                        <EditText
+                            android:id="@+id/student_5433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5433"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Dairy Products -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="434. Dairy Products" />
+                        <EditText
+                            android:id="@+id/student_5434"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5434"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5434"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Pulses -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="435. Pulses" />
+                        <EditText
+                            android:id="@+id/student_5435"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5435"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5435"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Beverages -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="436. Beverages" />
+                        <EditText
+                            android:id="@+id/student_5436"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5436"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5436"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <!-- All Other Food Including Grocery -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="437. All Other Food Including Grocery" />
+                        <EditText
+                            android:id="@+id/student_5437"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5437"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5437"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Crockery -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="438. Crockery" />
+                        <EditText
+                            android:id="@+id/student_5438"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5438"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5438"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Uniforms etc. -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="439. Uniforms etc." />
+                        <EditText
+                            android:id="@+id/student_5439"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5439"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5439"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Bed Sheets, Towels, Soap etc. -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="440. Bed Sheets, Towels, Soap etc." />
+                        <EditText
+                            android:id="@+id/student_5440"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5440"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5440"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Value of Goods/Material Purchased for Resale Without Further Processing (for Trading Purpose) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="441. Value of Goods/Material Purchased for Resale Without Further Processing (for Trading Purpose)" />
+                        <EditText
+                            android:id="@+id/student_5441"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5441"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5441"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Cleaning Material -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="442. Cleaning Material" />
+                        <EditText
+                            android:id="@+id/student_5442"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5442"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5442"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Expenditure on Wood (Firewood etc.) -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="443. Expenditure on Wood (Firewood etc.)" />
+                        <EditText
+                            android:id="@+id/student_5443"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5443"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5443"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+
+                    <!-- Packaging Charges -->
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="444. Packaging Charges" />
+                        <EditText
+                            android:id="@+id/student_5444"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_5444"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_5444"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="4"
+                            android:text="400.Total" />
+                        <EditText
+                            android:id="@+id/student_400"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/month_400"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                        <EditText
+                            android:id="@+id/year_400"
+                            android:layout_weight="2"
+                            style="@style/edit_table"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Form action buttons -->
+                <include layout="@layout/layout_form_buttons"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Footer Section-->
+        <include android:id="@+id/footer" layout="@layout/footer"/>
+    </RelativeLayout>
+
+    <!-- Navigation Drawer -->
+    <include layout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

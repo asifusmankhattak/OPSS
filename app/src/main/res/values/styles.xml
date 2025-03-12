@@ -1,0 +1,657 @@
+<resources>
+
+    <style name="ThemeParent" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="bg">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="toolbarStyle">@style/MyActionBar</item>
+        <item name="android:statusBarColor">?attr/s_color</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="Tablet" parent="ThemeParent">
+        <item name="t_xm">12dp</item>
+        <item name="t_sm">14dp</item>
+        <item name="t_md">16dp</item>
+        <item name="t_lg">18dp</item>
+        <item name="t_xl">20dp</item>
+        <item name="h_btn">56dp</item>
+        <item name="icon_lg">50dp</item>
+        <item name="icon_md">40dp</item>
+        <item name="icon_sm">30dp</item>
+        <item name="pad">4dp</item>
+        <item name="padd">8dp</item>
+        <item name="paddd">12dp</item>
+    </style>
+
+    <style name="Mobile" parent="ThemeParent">
+        <item name="t_xm">10dp</item>
+        <item name="t_sm">12dp</item>
+        <item name="t_md">14dp</item>
+        <item name="t_lg">16dp</item>
+        <item name="t_xl">18dp</item>
+        <item name="h_btn">48dp</item>
+        <item name="icon_lg">40dp</item>
+        <item name="icon_md">32dp</item>
+        <item name="icon_sm">24dp</item>
+        <item name="pad">3dp</item>
+        <item name="padd">6dp</item>
+        <item name="paddd">10dp</item>
+    </style>
+
+    <style name="ThemeBlackTablet" parent="Tablet">
+        <item name="sp_color">#45929494</item>
+        <item name="s_color">#000000</item>
+        <item name="c_color">#494949</item>
+        <item name="e_color">#898A88</item>
+    </style>
+
+    <style name="ThemeBlackMobile" parent="Mobile">
+        <item name="sp_color">#45929494</item>
+        <item name="s_color">#000000</item>
+        <item name="c_color">#494949</item>
+        <item name="e_color">#898A88</item>
+    </style>
+
+    <style name="ThemeBlueTablet" parent="Tablet">
+        <item name="sp_color">#009688</item>
+        <item name="s_color">#066E64</item>
+        <item name="c_color">#13A597</item>
+        <item name="e_color">#12D5C2</item>
+    </style>
+    <style name="ThemeBlueMobile" parent="Mobile">
+        <item name="sp_color">#009688</item>
+        <item name="s_color">#066E64</item>
+        <item name="c_color">#13A597</item>
+        <item name="e_color">#12D5C2</item>
+    </style>
+
+    <style name="ThemeRedTablet" parent="Tablet">
+        <item name="sp_color">#22B5F8</item>
+        <item name="s_color">#0A71C3</item>
+        <item name="c_color">#0C9DAF</item>
+        <item name="e_color">#57DCED</item>
+    </style>
+
+    <style name="ThemeRedMobile" parent="Mobile">
+        <item name="sp_color">#22B5F8</item>
+        <item name="s_color">#0A71C3</item>
+        <item name="c_color">#0C9DAF</item>
+        <item name="e_color">#57DCED</item>
+    </style>
+
+
+
+
+
+    <style name="MyActionBar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/s_color</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+
+        <!--For TextView Styles-->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="edit_form">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">?h_btn</item>
+        <item name="android:textSize">?t_lg</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:paddingLeft">?padd</item>
+        <item name="android:paddingRight">?padd</item>
+        <item name="android:background">@drawable/bg_text_field</item>
+        <item name="android:popupBackground">@color/color_blue</item>
+    </style>
+    <style name="edit_form_num" parent="edit_form">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">4</item>
+    </style>
+
+    <style name="spn_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?h_btn</item>
+        <item name="android:textSize">?t_lg</item>
+        <item name="android:fontFamily">@font/urdu</item>
+    </style>
+
+    <style name="txt_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+
+    <style name="login_lbl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/urdu</item>
+        <item name="android:color">@color/black</item>
+        <item name="android:textSize">?t_md</item>
+        <item name="android:layout_marginBottom">-10dp</item>
+    </style>
+    <style name="login_img">
+        <item name="android:layout_width">?icon_lg</item>
+        <item name="android:layout_height">?icon_lg</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">?pad</item>
+        <item name="android:padding">?pad</item>
+        <item name="android:backgroundTint">?s_color</item>
+    </style>
+
+    <style name="login_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?icon_lg</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">?t_lg</item>
+        <item name="android:textDirection">ltr</item>
+        <item name="android:background">@drawable/bg_text_field</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:padding">?padd</item>
+    </style>
+
+    <style name="txt_md" parent="txt_normal">
+        <item name="android:textSize">?attr/t_md</item>
+    </style>
+    <style name="txt_lg" parent="txt_normal">
+        <item name="android:textSize">?attr/t_lg</item>
+    </style>
+
+    <style name="txt_lbl">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?t_md</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/urdu</item>
+        <item name="android:layout_marginBottom">-12dp</item>
+    </style>
+
+    <style name="txt_bg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">?attr/t_lg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">?s_color</item>
+        <item name="android:paddingRight">?pad</item>
+        <item name="android:paddingLeft">?pad</item>
+        <item name="android:layout_marginBottom">?pad</item>
+    </style>
+
+    <style name="head_cnt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">?attr/t_xl</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5</item>
+    </style>
+
+    <style name="summary_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">?pad</item>
+        <item name="android:layout_marginBottom">?pad</item>
+        <item name="android:layout_marginLeft">?padd</item>
+        <item name="android:layout_marginRight">?padd</item>
+        <item name="android:padding">?pad</item>
+        <item name="android:background">@drawable/rounded_border</item>
+    </style>
+
+    <style name="summary_txt">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/urdu</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingRight">?padd</item>
+        <item name="android:layout_marginBottom">-10dp</item>
+    </style>
+    <style name="summary_txt_lg" parent="summary_txt">
+        <item name="android:layout_marginTop">?padd</item>
+        <item name="android:textSize">?t_sm</item>
+    </style>
+
+    <style name="s_heading" parent="summary_txt">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:textColor">@color/Colorwhite</item>
+    </style>
+
+
+    <style name="summary_txt_md" parent="summary_txt">
+        <item name="android:textSize">?t_md</item>
+    </style>
+    <style name="summary_txt_sm" parent="summary_txt">
+        <item name="android:textSize">?t_sm</item>
+    </style>
+
+    <style name="help_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/urdu</item>
+        <item name="android:textSize">?t_lg</item>
+        <item name="android:layout_marginRight">?padd</item>
+        <item name="android:layout_marginLeft">?padd</item>
+    </style>
+    <style name="help_heading" parent="help_text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_blue</item>
+        <item name="android:layout_marginBottom">-15dp</item>
+    </style>
+
+    <style name="summary_img">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">?padd</item>
+        <item name="android:paddingRight">?padd</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="h20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">?attr/t_xl</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">?attr/pad</item>
+    </style>
+
+    <style name="cprogress" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">?attr/icon_md</item>
+        <item name="android:layout_height">?attr/icon_md</item>
+        <item name="android:layout_marginTop">?attr/pad</item>
+        <item name="android:indeterminateTint">?attr/s_color</item>
+    </style>
+
+
+    <style name="txtcard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">?padd</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">?pad</item>
+        <item name="android:textSize">?t_lg</item>
+    </style>
+
+    <style name="md_icon">
+        <item name="android:layout_width">?attr/icon_md</item>
+        <item name="android:layout_height">?attr/icon_md</item>
+        <item name="android:tint">?attr/s_color</item>
+    </style>
+
+    <style name="lg_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">?attr/t_lg</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="tbl_row">
+        <item name="android:layout_marginTop">?paddd</item>
+        <item name="android:layout_marginBottom">?paddd</item>
+    </style>
+
+    <style name="tbl_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">?attr/icon_md</item>
+        <item name="android:layout_marginRight">?attr/icon_md</item>
+        <item name="android:paddingRight">?attr/icon_md</item>
+        <item name="android:padding">?pad</item>
+    </style>
+
+    <style name="sbtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?h_btn</item>
+        <item name="android:background">@drawable/round_s_color</item>
+        <item name="android:fontFamily">@font/urdu</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">?attr/t_lg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">?pad</item>
+        <item name="android:layout_marginTop">?paddd</item>
+        <item name="android:layout_marginBottom">?padd</item>
+        <item name="android:layout_marginLeft">?pad</item>
+        <item name="android:layout_marginRight">?pad</item>
+    </style>
+
+    <style name="minibtn">
+        <item name="android:layout_width">?attr/icon_lg</item>
+        <item name="android:layout_height">?attr/icon_md</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">?attr/t_md</item>
+        <item name="android:layout_margin">?attr/pad</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="img_tick">
+        <item name="android:layout_width">?attr/icon_md</item>
+        <item name="android:layout_height">?attr/icon_md</item>
+        <item name="android:layout_marginTop">?attr/pad</item>
+        <item name="android:tint">?attr/s_color</item>
+        <item name="android:src">@drawable/ic_tick_c</item>
+    </style>
+
+    <style name="img_load">
+        <item name="android:layout_width">?attr/icon_md</item>
+        <item name="android:layout_height">?attr/icon_md</item>
+        <item name="android:layout_marginTop">?attr/pad</item>
+        <item name="android:tint">?attr/s_color</item>
+        <item name="android:src">@drawable/ic_load</item>
+    </style>
+
+    <style name="tdraw">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/s_color</item>
+        <item name="android:drawableTint">?attr/s_color</item>
+        <item name="android:drawablePadding">?attr/pad</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">?attr/t_lg</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="valr">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">?attr/t_md</item>
+    </style>
+
+    <style name="cards">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/round_corner_border</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?attr/h_btn</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">?attr/t_lg</item>
+        <item name="android:background">@drawable/round_s_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">?attr/pad</item>
+        <item name="android:paddingRight">?attr/pad</item>
+    </style>
+
+    <style name="myswitch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?t_lg</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">?padd</item>
+        <item name="android:padding">?padd</item>
+        <item name="android:switchMinWidth">?icon_lg</item>
+        <item name="android:checked">true</item>
+        <item name="android:textOff">OFF</item>
+        <item name="android:textOn">ON</item>
+    </style>
+
+    <style name="liner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">?padd</item>
+        <item name="android:padding">?pad</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="line">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">?paddd</item>
+        <item name="android:padding">?padd</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="smp_container_hr">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?android:attr/autofilledHighlight</item>
+    </style>
+
+    <style name="smp_container_vr">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+
+
+    <style name="summary_txt_md_hd" parent="summary_txt_md">
+        <item name="android:textColor">?s_color</item>
+    </style>
+    <style name="summary_txt_lg_hd" parent="summary_txt_lg">
+        <item name="android:textColor">?s_color</item>
+    </style>
+    <style name="summary_txt_lg_r" parent="summary_txt_md">
+        <item name="android:gravity">right</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+    <style name="hr_form_scroll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_above">@+id/footer</item>
+    </style>
+    <style name="edit_form_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?icon_lg</item>
+        <item name="android:textSize">?t_lg</item>
+        <item name="android:paddingLeft">?padd</item>
+        <item name="android:paddingRight">?padd</item>
+        <item name="android:background">@drawable/bg_text_field</item>
+    </style>
+
+    <style name="edit_form_t" parent="edit_form">
+        <item name="android:layout_marginRight">?paddd</item>
+        <item name="android:layout_weight">.17</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:hint">تعداد</item>
+    </style>
+
+    <style name="edit_form_td" parent="edit_form_t">
+        <item name="android:enabled">false</item>
+        <item name="android:background">@drawable/bg_disabled</item>
+    </style>
+
+    <style name="edit_form_tw" parent="edit_form_t">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:text">0</item>
+    </style>
+
+    <style name="edit_form_tr" parent="edit_form_t">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="rdg">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">2</item>
+    </style>
+
+    <style name="rd_yesno">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="moption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="img_scroll">
+        <item name="android:layout_width">?icon_md</item>
+        <item name="android:layout_height">?icon_md</item>
+        <item name="android:layout_marginRight">?pad</item>
+        <item name="android:layout_marginLeft">?pad</item>
+    </style>
+    <style name="ic_list">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">?icon_sm</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="match_hor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="match_ver">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="wrapper_hor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="wrapper_gone">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="q_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:color">@color/color_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="vertical_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="horizontal_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="edit_form_a" parent="edit_form">
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="summary_eng">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">?t_sm</item>
+        <item name="android:layout_weight">6.6</item>
+        <item name="android:layout_marginRight">?pad</item>
+    </style>
+    <style name="summary_eng_c" parent="summary_eng">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_weight">1.2</item>
+    </style>
+
+    <style name="edit_table">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">?icon_lg</item>
+        <item name="android:textSize">?t_lg</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:padding">?paddd</item>
+        <item name="android:background">@drawable/bg_text_field</item>
+        <item name="android:popupBackground">@color/color_blue</item>
+        <item name="android:gravity">top</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">2.2</item>
+    </style>
+
+    <style name="edit_table_complex" parent="edit_table">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="edit_table_num" parent="edit_table">
+        <item name="android:inputType">number</item>
+        <item name="android:digits">0123456789</item>
+    </style>
+
+    <style name="edit_table_gender" parent="edit_table">
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:layout_margin">?pad</item>
+    </style>
+
+    <style name="edit_table_gender2" parent="edit_table">
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_margin">?pad</item>
+    </style>
+
+    <style name="edit_table_payment" parent="edit_table">
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:layout_margin">?pad</item>
+    </style>
+
+    <style name="hliner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">?pad</item>
+    </style>
+
+    <style name="vliner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">?pad</item>
+    </style>
+
+    <style name="parent_drawer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/grey</item>
+        <item name="android:id">@id/my_drawer_layout</item>
+    </style>
+
+
+
+
+</resources>

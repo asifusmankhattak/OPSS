@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    //id 'com.google.gms.google-services'
+    //id 'com.google.firebase.crashlytics'
+}
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "pbs.sme.survey"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "17"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        // add the code from below line
+        applicationVariants.all{
+                // this method is use to rename your all apk weather
+                // it may be signed or unsigned(debug apk)
+            variant ->
+                variant.outputs.each{
+                        // on below line we are setting
+                        // a name to our apk as GFG.apk
+                    output->
+                        // on below line we are adding version name to
+                        // our .apk file along with the app name
+                        //def name = "${variant.versionName}.apk"
+                        def name = "sme.apk"
+                        // on below line we are setting the
+                        // outputFile Name to our apk file
+                        output.outputFileName = name
+                }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(path: ':Utils')
+    implementation project(path: ':Database')
+    implementation project(path: ':GeoMap')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+
+    //implementation 'com.google.android.gms:play-services:9.0.2'
+    //implementation 'com.google.firebase:firebase-crashlytics:18.3.2'
+    //implementation 'com.google.firebase:firebase-analytics:21.2.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.0'
+
+    implementation 'com.github.AsynctaskCoffee:AndroidOfflineMapLibrary:v1'
+    implementation 'com.github.MKergall:osmbonuspack:6.8.0'
+    implementation 'org.osmdroid:osmdroid-android:6.1.11'
+
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+}

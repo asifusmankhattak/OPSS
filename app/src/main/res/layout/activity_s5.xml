@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent_drawer"
+    tools:context="pbs.sme.survey.activity.S9Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="@style/hr_form_scroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_household"/>
+
+                <TextView
+                    style="@style/summary_txt_lg"
+                    android:layout_width="match_parent"
+                    android:text="SECTION -5 DIGITAL INTERMEDIARY PLATFORMS (DIPs" />
+
+                <LinearLayout
+                    style="@style/smp_container_hr"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        style="@style/smp_container_hr"
+                        android:weightSum="10"
+                        android:paddingVertical="?pad"
+                        android:background="?s_color">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="1.2"
+                            android:textColor="@color/white"
+                            android:text="Code"
+                            android:gravity="center_horizontal"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="6.8"
+                            android:text="Description"
+                            android:textColor="@color/white"
+                            android:gravity="left"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="2"
+                            android:textColor="@color/white"
+                            android:text="Value"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="501. Did your business use/pay a digital intermediary platform to sell your goods and services?"/>
+                        <RadioGroup
+                            android:id="@+id/q501"
+                            style="@style/rdg"
+                            android:layout_width="match_parent"
+                            android:weightSum="2">
+                            <RadioButton
+                                android:id="@+id/q5011"
+                                style="@style/rd_yesno"
+                                android:text="Yes" />
+                            <RadioButton
+                                android:id="@+id/q5012"
+                                style="@style/rd_yesno"
+                                android:text="No" />
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="502. Is the digital intermediary platform provider located in or outside the economy/country?"/>
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Domestic: Please specify the name of the company:"/>
+                        <EditText
+                            android:id="@+id/q5021"
+                            style="@style/edit_form_text"/>
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="International: Please specify the name of the company"/>
+                        <EditText
+                            android:id="@+id/q5022"
+                            style="@style/edit_form_text"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/vliner">
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="503. How much did your business pay to a digital intermediary platform to sell your goods and services?"/>
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="Amount in Rs:"/>
+                        <EditText
+                            android:id="@+id/q503rs"
+                            style="@style/edit_form_text"/>
+                        <TextView
+                            style="@style/q_heading"
+                            android:text="OR (% of cost) if the actual value is not available"/>
+                        <EditText
+                            android:id="@+id/q503perc"
+                            style="@style/edit_form_text"/>
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <include layout="@layout/layout_form_buttons"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,301 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">SME 2025</string>
+    <string name="application">SME Application 2024-2025</string>
+
+
+    <string name="signin" translatable="false">signin</string>
+    <string name="lbl_username" translatable="false">Enter Username</string>
+    <string name="lbl_password" translatable="false">Enter Password</string>
+    <string name="lbl_loginbutton" translatable="false">Login</string>
+    <string name="lbl_forgot" translatable="false">Forgot Password?</string>
+
+
+    <string name="version">?android:versionName</string>
+    <string name="survey_desc">Survey on Major Public Services</string>
+    <string name="nav_open" translatable="false">Open</string>
+    <string name="nav_close" translatable="false">Close</string>
+    <string name="pak_geo" translatable="false">{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              73.05803886666084,
+              33.67232661773478
+            ],
+            [
+              73.06568345625632,
+              33.6765018921938
+            ],
+            [
+              73.06956538276305,
+              33.678688740563686
+            ],
+            [
+              73.06920638946767,
+              33.6821675050669
+            ],
+            [
+              73.06819116166795,
+              33.68380748070517
+            ],
+            [
+              73.06723612811149,
+              33.682664657241844
+            ],
+            [
+              73.06526508565807,
+              33.682565205691844
+            ],
+            [
+              73.06442801733982,
+              33.68604327515571
+            ],
+            [
+              73.06359094276397,
+              33.68907332607361
+            ],
+            [
+              73.06215820828433,
+              33.692104632856356
+            ],
+            [
+              73.04770642392845,
+              33.68509965761059
+            ],
+            [
+              73.04328912590427,
+              33.69140756589516
+            ],
+            [
+              73.04173701271336,
+              33.691456844059516
+            ],
+            [
+              73.03510743132861,
+              33.688278581613844
+            ],
+            [
+              73.0358829711897,
+              33.68609272387444
+            ],
+            [
+              73.03379362332188,
+              33.68470112356829
+            ],
+            [
+              73.03510745715482,
+              33.68296196930821
+            ],
+            [
+              73.03218079740327,
+              33.681421704374046
+            ],
+            [
+              73.02806273083758,
+              33.67918540302233
+            ],
+            [
+              73.03021025778312,
+              33.676601464931096
+            ],
+            [
+              73.0470497708134,
+              33.68470172982296
+            ],
+            [
+              73.05021490792876,
+              33.68241584509211
+            ],
+            [
+              73.05803886666084,
+              33.67232661773478
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    }
+  ]
+}</string>
+
+    <string name="detail" translatable="false">
+        <u>Detail</u>
+    </string>
+
+    <string-array name="spn_reason">
+        <item>فون نمبر درج نہ کرنے کی وجہ بتائیں</item>
+        <item>فون نمبر نہیں جانتے</item>
+        <item>فون نہیں ہے</item>
+        <item>نمبر بتانا نہیں چاہتا</item>
+    </string-array>
+
+    <string-array name="spn_contact">
+        <item>Mobile</item>
+        <item>Landline</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="spn_nch_type">
+        <item> منتخب کریں</item>
+        <item>انفرادی</item>
+        <item>گورنمنٹ</item>
+    </string-array>
+    <string-array name="surveyslist">
+        <item>Fishing</item>
+        <item>Personal services</item>
+        <item>Education</item>
+    </string-array>
+    <string-array name="spn_survey">
+        <item>Publishing and software development activities </item>
+        <item>Survey of education</item>
+        <item>Survey on human health and social work activities</item>
+        <item>Survey on other personal service activities </item>
+        <item>Study on accommodation and food service activities</item>
+    </string-array>
+
+
+    <string-array name="spn_blocks">
+        <item>NCHBLOCK</item>
+    </string-array>
+
+
+    <string-array name="spn_s3_codes">
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>304</item>
+        <item>305</item>
+        <item>306</item>
+        <item>307</item>
+    </string-array>
+
+
+    <string-array name="spn_pisc">
+        <item>Select PISC Code</item>
+    </string-array>
+
+    <string-array name="spn_codes">
+        <item>Code</item>
+        <item>0300</item>
+        <item>0301</item>
+        <item>0302</item>
+        <item>0303</item>
+        <item>0304</item>
+        <item>0305</item>
+        <item>0306</item>
+        <item>0307</item>
+        <item>0308</item>
+        <item>0309</item>
+        <item>0310</item>
+        <item>0311</item>
+        <item>0312</item>
+        <item>0313</item>
+        <item>0314</item>
+        <item>0315</item>
+        <item>0316</item>
+        <item>0317</item>
+        <item>0318</item>
+        <item>0319</item>
+        <item>0320</item>
+        <item>0321</item>
+        <item>0322</item>
+        <item>0323</item>
+        <item>0324</item>
+        <item>0325</item>
+        <item>0326</item>
+        <item>0327</item>
+        <item>0328</item>
+        <item>0329</item>
+        <item>0330</item>
+        <item>0331</item>
+        <item>0332</item>
+        <item>0333</item>
+        <item>0334</item>
+        <item>0335</item>
+        <item>0336</item>
+        <item>0337</item>
+        <item>0338</item>
+        <item>0339</item>
+        <item>0340</item>
+        <item>0341</item>
+        <item>0342</item>
+        <item>0343</item>
+        <item>0344</item>
+        <item>0345</item>
+        <item>0346</item>
+        <item>0347</item>
+        <item>0348</item>
+        <item>0349</item>
+        <item>0350</item>
+        <item>0351</item>
+        <item>0352</item>
+        <item>0353</item>
+        <item>0354</item>
+        <item>0355</item>
+        <item>0364</item>
+        <item>0370</item>
+    </string-array>
+
+    <string name="profile">profile</string>
+    <string name="setting">Setting</string>
+    <string name="home">home</string>
+    <string name="help">Help</string>
+    <string name="backuprestore">Backup / Restore</string>
+    <string name="title_activity_password" translatable="false">PasswordActivity</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Sign in or register</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="welcome" translatable="false">"Welcome !"</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed" translatable="false">"Login failed"</string>
+    <!--  Strings used for fragments for navigation  -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="lorem_ipsum" translatable="false">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="import_from_online" translatable="false">Import (From Online)</string>
+</resources>

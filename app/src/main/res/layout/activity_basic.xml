@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="pbs.sme.survey.activity.BasicActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="@style/hr_form_scroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_household"/>
+
+                <TextView
+                    style="@style/summary_txt_lg"
+                    android:layout_width="match_parent"
+                    android:text="ابتدائی کوائف / گھرانہ کے متعلقہ معلومات" />
+
+                <LinearLayout
+                    style="@style/smp_container_hr"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/liner"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+                        <LinearLayout
+                            style="@style/smp_container_vr"
+                            android:layout_weight="9"
+                            android:paddingRight="?paddd">
+                            <TextView
+                                style="@style/summary_txt_lg_r"
+                                android:layout_width="match_parent"
+                                android:text="گھرانہ کے سربراہ کی جنس"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/liner">
+                        <LinearLayout
+                            style="@style/smp_container_vr">
+                            <TextView
+                                style="@style/summary_txt_lg_r"
+                                android:layout_width="match_parent"
+                                android:gravity="right"
+                                android:text="گھرانے کا رابطہ نمبر / موبائل نمبر " />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="8">
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/spinner_container">
+                                    <Spinner
+                                        android:id="@+id/phone_type"
+                                        style="@style/spn_form"
+                                        android:entries="@array/spn_contact"/>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="3"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/spinner_container"
+                                    android:layout_marginHorizontal="?padd">
+                                    <Spinner
+                                        android:id="@+id/phone_code"
+                                        style="@style/spn_form"
+                                        android:entries="@array/spn_codes"/>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:visibility="gone"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="6"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/spinner_container"
+                                    android:layout_marginHorizontal="?padd">
+                                    <Spinner
+                                        android:visibility="gone"
+                                        android:id="@+id/reason_no_phone"
+                                        style="@style/spn_form"
+                                        android:entries="@array/spn_reason"/>
+                                </RelativeLayout>
+                                <EditText
+                                    android:visibility="gone"
+                                    android:id="@+id/phone_code2"
+                                    style="@style/edit_form"
+                                    android:layout_weight="3"
+                                    android:singleLine="true"
+                                    android:maxLength="4"
+                                    android:inputType="number"
+                                    android:layout_marginHorizontal="?padd"/>
+                                <EditText
+                                    android:id="@+id/phone_number"
+                                    style="@style/edit_form"
+                                    android:inputType="number"
+                                    android:hint="فون نمبر کوڈ کے بغیر"
+                                    android:maxLength="7"
+                                    android:layout_weight="3"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/liner">
+                        <TextView
+                            style="@style/summary_txt_lg_r"
+                            android:layout_width="match_parent"
+                            android:text="قسم گھرانہ"/>
+                        <RadioGroup
+                            android:id="@+id/hh_type"
+                            style="@style/rdg"
+                            android:layout_width="match_parent"
+                            android:weightSum="4">
+                            <RadioButton
+                                android:id="@+id/hh_type4"
+                                style="@style/rd_yesno"
+                                android:enabled="false"
+                                android:text="دیگر" />
+                            <RadioButton
+                                android:id="@+id/hh_type3"
+                                style="@style/rd_yesno"
+                                android:text="گورنمنٹ" />
+                            <RadioButton
+                                android:id="@+id/hh_type2"
+                                style="@style/rd_yesno"
+                                android:text="ایم۔سی۔ایچ" />
+                            <RadioButton
+                                android:id="@+id/hh_type1"
+                                style="@style/rd_yesno"
+                                android:text="این۔سی۔ایچ" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/l114"
+                        style="@style/liner"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:visibility="gone">
+                        <EditText
+                            android:id="@+id/hh_count"
+                            style="@style/edit_form_t"
+                            android:layout_weight="2.5"/>
+                        <TextView
+                            style="@style/summary_txt_lg_r"
+                            android:layout_weight="7.5"
+                            android:text="مشترکہ کاشت کی صورت میں گھرانوں کی تعداد"/>
+                    </LinearLayout>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l132"
+                    style="@style/liner"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+                    <TextView
+                        style="@style/summary_txt_lg_r"
+                        android:layout_width="match_parent"
+                        android:text="2.  قرض کس مقصد کے لیے لیا؟ (ایک سے زائد جوابات ممکن ہیں)"/>
+                    <LinearLayout
+                        style="@style/match_ver">
+                        <CheckBox
+                            android:id="@+id/loan_purposeC"
+                            style="@style/moption"
+                            android:text="مشینری کے لیے" />
+                        <CheckBox
+                            android:id="@+id/loan_purposeB"
+                            style="@style/moption"
+                            android:text="مال مویشی کے لیے" />
+                        <CheckBox
+                            android:id="@+id/loan_purposeA"
+                            style="@style/moption"
+                            android:text="فصلات کےلئے" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <include layout="@layout/layout_form_buttons"/>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer_urdu"/>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/main_menu"
+        app:headerLayout="@layout/mheader"/>
+</androidx.drawerlayout.widget.DrawerLayout>

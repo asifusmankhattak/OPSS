@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pbs.sme.survey.activity.LoginActivity"
+    android:background="@color/grey">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300"
+        android:background="?attr/s_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ddColorGray5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="220dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/pbslogo" />
+
+        <TextView
+            style="@style/head_cnt"
+            android:layout_marginBottom="-10dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="?t_xl" />
+
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_corner_bg"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_acc"
+                    android:layout_width="@dimen/dimen_80"
+                    android:layout_height="@dimen/dimen_80"
+                    app:srcCompat="@drawable/agrilogo" />
+
+                <TextView
+                    android:id="@+id/txt_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-10dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/signin"
+                    android:textSize="?attr/t_md"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_un"
+                    style="@style/login_lbl"
+                    android:text="@string/lbl_username" />
+
+                <EditText
+                    android:id="@+id/uname"
+                    style="@style/login_edit"
+                    android:drawableRight="@drawable/ic_person"
+                    android:hint="@string/lbl_username"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txt_pass"
+                    style="@style/login_lbl"
+                    android:text="@string/lbl_password" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="?attr/pad"
+                    android:layout_marginBottom="?attr/pad"
+                    android:paddingLeft="?attr/pad">
+
+                    <EditText
+                        android:id="@+id/pass"
+                        style="@style/login_edit"
+                        android:hint="شمار کنندہ کا پاس ورڈ"
+                        android:inputType="textPassword"
+                        android:text="pbs@12345" />
+
+                    <ImageView
+                        android:id="@+id/show_pass_btn"
+                        style="@style/login_img"
+                        android:onClick="ShowHidePass"
+                        android:src="@drawable/show_password" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_signin"
+                    style="@style/sbtn"
+                    android:onClick="Login"
+                    android:text="@string/lbl_loginbutton" />
+
+                <TextView
+                    android:id="@+id/txt_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:onClick="forgotPassword"
+                    android:text="@string/lbl_forgot"
+                    android:textColor="@color/color_blue"
+                    android:textSize="?attr/t_lg" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"/>
+</RelativeLayout>

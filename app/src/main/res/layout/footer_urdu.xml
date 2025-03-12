@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="?attr/s_color"
+        android:textColor="@color/white"
+        android:textSize="?t_md"
+        android:textStyle="bold"
+        android:fontFamily="@font/urdu"
+        android:text="ڈیٹا پروسیسنگ سنٹر، ایس ایس ونگ،  پاکستان ادارہ شماریات "/>
+</LinearLayout>

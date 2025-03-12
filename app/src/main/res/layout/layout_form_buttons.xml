@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/vertical_wrapper">
+    <LinearLayout
+        style="@style/horizontal_wrapper"
+        android:layout_weight="10"
+        android:layout_marginBottom="?paddd">
+        <Button
+            android:id="@+id/btnp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            style="@style/sbtn"
+            android:drawableLeft="@drawable/ic_left"
+            android:text="Back"/>
+        <Button
+            android:id="@+id/btns"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            style="@style/sbtn"
+            android:text="Save  Form"/>
+        <Button
+            android:id="@+id/btnn"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            style="@style/sbtn"
+            android:drawableRight="@drawable/ic_right"
+            android:text="Next"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/error_below_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorRed"
+        style="@style/summary_txt_lg_r"/>
+</LinearLayout>

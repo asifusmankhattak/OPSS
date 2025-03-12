@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/horizontal_wrapper"
+    android:padding="?padd"
+    android:layout_marginBottom="?pad"
+    android:background="@drawable/list_underline"
+    android:weightSum="10">
+    <TextView
+        android:id="@+id/txt_code"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        style="@style/txt_lg"
+        android:gravity="left"
+        android:text=""/>
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="0dp"
+        android:layout_weight="3.5"
+        style="@style/txt_lg"
+        android:gravity="left"
+        android:text=""/>
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:gravity="center_horizontal"
+        style="@style/txt_lg"
+        android:text=""/>
+    <ImageView
+        android:id="@+id/statusbtn"
+        android:layout_weight="1.5"
+        android:gravity="center_horizontal"
+        style="@style/ic_list"/>
+    <ImageView
+        android:id="@+id/editbtn"
+        style="@style/ic_list"
+        android:layout_weight="1"
+        app:tint="@color/black"
+        android:gravity="right"
+        android:src="@drawable/ic_edit"/>
+</LinearLayout>

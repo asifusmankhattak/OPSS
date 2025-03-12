@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    style="@style/parent_drawer"
+    tools:context="pbs.sme.survey.activity.SurveysListActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/header"
+            style="@style/summary_container"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp">
+            <LinearLayout
+                style="@style/horizontal_wrapper"
+                android:weightSum="10">
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.5"
+                    android:text="Block:"
+                    android:textColor="?s_color"
+                    android:gravity="left"
+                    android:layout_marginBottom="0dp"/>
+                <TextView
+                    android:id="@+id/tv_block_code"
+                    style="@style/summary_txt_md"
+                    android:layout_weight="3"
+                    android:text="00000000"
+                    android:gravity="left"/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.5"
+                    android:text="Total:"
+                    android:textColor="?s_color"
+                    android:layout_marginBottom="0dp"/>
+                <TextView
+                    android:id="@+id/tv_total"
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1"
+                    android:text="00"
+                    android:gravity="left"/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="2"
+                    android:text="Uploaded:"
+                    android:textColor="?s_color"
+                    android:layout_marginBottom="0dp"/>
+                <TextView
+                    android:id="@+id/tv_upload"
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1"
+                    android:text="00"
+                    android:gravity="right"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/vertical_wrapper"
+            android:layout_below="@id/header"
+            android:padding="?padd">
+
+            <LinearLayout
+                android:id="@+id/tbl_header"
+                style="@style/horizontal_wrapper"
+                android:background="?s_color"
+                android:padding="?padd"
+                android:weightSum="10">
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Sr."
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="5"
+                    android:text="Name of the Survey"
+                    android:textColor="@color/white"
+                    android:gravity="left"/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.8"
+                    android:gravity="left"
+                    android:text="Establishments"
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.2"
+                    android:text="Status"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="?icon_sm"
+                    android:layout_weight="1.3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/srv_header1"
+                style="@style/horizontal_wrapper"
+                android:background="@color/settGreen"
+                android:padding="?padd"
+                android:weightSum="10">
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="1"
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="5"
+                    android:text="Publishing and software development activities "
+                    android:textColor="@color/white"
+                    android:gravity="left"/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="3/10"
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.2"
+                    android:text="Completed"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="?icon_sm"
+                    android:layout_weight="1.3" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/srv_header2"
+                style="@style/horizontal_wrapper"
+                android:background="@color/settGreen"
+                android:padding="?padd"
+                android:weightSum="10">
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="2."
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="5"
+                    android:text="Survey of education"
+                    android:textColor="@color/white"
+                    android:gravity="left"/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="4/5"
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.2"
+                    android:text="Status"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="?icon_sm"
+                    android:layout_weight="1.3" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/srv_header3"
+                style="@style/horizontal_wrapper"
+                android:background="@color/settGreen"
+                android:padding="?padd"
+                android:weightSum="10">
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="3."
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="5"
+                    android:text="Survey on human health and social work activities"
+                    android:textColor="@color/white"
+                    android:gravity="left"/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="4/5"
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.2"
+                    android:text="Status"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="?icon_sm"
+                    android:layout_weight="1.3" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/srv_header4"
+                style="@style/horizontal_wrapper"
+                android:background="@color/settGreen"
+                android:padding="?padd"
+                android:weightSum="10">
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="4."
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="5"
+                    android:text="Survey on other personal service activities "
+                    android:textColor="@color/white"
+                    android:gravity="left"/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="4/5"
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.2"
+                    android:text="Status"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="?icon_sm"
+                    android:layout_weight="1.3" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/srv_header5"
+                style="@style/horizontal_wrapper"
+                android:background="@color/settGreen"
+                android:padding="?padd"
+                android:weightSum="10">
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Sr."
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="5"
+                    android:text="Study on accommodation and food service activities"
+                    android:textColor="@color/white"
+                    android:gravity="left"/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="4/5"
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="1.2"
+                    android:text="Status"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="?icon_sm"
+                    android:layout_weight="1.3" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bott_buttons"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_above="@+id/footer">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/sbtn"
+                android:drawableLeft="@drawable/ic_left"
+                android:onClick="Finish"
+                android:text="Complete Block"/>
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/sbtn"
+                android:drawableRight="@drawable/ic_right"
+                android:text="Start Block"
+                android:onClick="start"/>
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

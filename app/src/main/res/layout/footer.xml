@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ddColorGray5"
+        android:gravity="center_horizontal"
+        android:padding="?attr/pad"
+        android:text="DP Center, SS Wing, PBS, Islamabad"
+        android:textColor="@color/white"
+        android:textSize="?t_lg"
+        android:textStyle="bold" />
+</LinearLayout>

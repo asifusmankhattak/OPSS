@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/liner"
+    android:layout_margin="?pad"
+    android:background="@drawable/round_no_border">
+
+    <LinearLayout
+        style="@style/smp_container_hr"
+        android:weightSum="10">
+        <TextView
+            style="@style/summary_txt_md_hd"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:text="Block"/>
+        <TextView
+            android:id="@+id/tv_block"
+            style="@style/summary_txt_md"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:text="000000000"/>
+        <TextView
+            style="@style/summary_txt_md_hd"
+            android:layout_weight="2"
+            android:text="Sr. No."
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/tv_sno"
+            style="@style/summary_txt_md"
+            android:layout_weight="1.5"
+            android:text="000"
+            android:gravity="left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/smp_container_hr"
+        android:weightSum="10">
+
+        <TextView
+            style="@style/summary_txt_md_hd"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:text="Survey" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/summary_txt_md"
+            android:layout_weight="5"
+            android:gravity="left"
+        />
+
+        <TextView
+            style="@style/summary_txt_md_hd"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="Employees" />
+
+        <TextView
+            android:id="@+id/tv_emp"
+            style="@style/summary_txt_md"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:text="000" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/smp_container_hr"
+        android:weightSum="10">
+        <TextView
+            style="@style/summary_txt_md_hd"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:text="Entity"/>
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/summary_txt_md"
+            android:layout_weight="8.5"
+            android:gravity="left"
+            android:text="________________________"/>
+    </LinearLayout>
+</LinearLayout>

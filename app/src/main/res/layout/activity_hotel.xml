@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent_drawer"
+    tools:context="pbs.sme.survey.activity.S3Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="@style/hr_form_scroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_household"/>
+
+                <TextView
+                    style="@style/summary_txt_lg"
+                    android:layout_width="match_parent"
+                    android:text="Section-3: Hotel " />
+
+                <LinearLayout
+                    style="@style/smp_container_hr"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:visibility="gone"
+                        style="@style/smp_container_hr"
+                        android:weightSum="9"
+                        android:paddingVertical="?pad"
+                        android:background="?s_color">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="6"
+                            android:text="Description"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:gravity="center_horizontal"
+                            android:text="M"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:text="F"/>
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:text="T"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        style="@style/hliner"
+                        android:weightSum="9">
+                        <TextView
+                            style="@style/summary_eng"
+                            android:layout_weight="6"
+                            android:text="Payments for raw materials, components, packing materials etc" />
+                        <EditText
+                            android:id="@+id/Male__301a"
+                            style="@style/edit_table_complex"/>
+                        <EditText
+                            android:id="@+id/female__301a"
+                            android:gravity="center_horizontal"
+                            style="@style/edit_table_complex"/>
+                        <EditText
+                            android:id="@+id/total__301a"
+                            style="@style/edit_table_complex"/>
+                    </LinearLayout>
+
+
+                   <LinearLayout
+                       style="@style/vertical_wrapper"
+                       android:layout_margin="?pad">
+
+                       <LinearLayout
+                           style="@style/liner">
+                           <LinearLayout
+                               style="@style/horizontal_wrapper"
+                               android:weightSum="10">
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="6.6"
+                                   android:textColor="?s_color"
+                                   android:text="Employment status"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="1.2"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Male"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="1.2"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Female"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:enabled="false"
+                                   android:layout_weight="1.2"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Total"/>
+
+
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper"
+                               android:weightSum="10">
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="6.4"
+                                   android:text="301- Working Proprietor, Working Proprietor,Working Proprietor"/>
+                               <EditText
+                                   style="@style/edit_table_gender"
+                                   android:id="@+id/Male__301"
+                                   android:hint="M"/>
+                               <EditText
+                                   style="@style/edit_table_gender"
+                                   android:id="@+id/Female__301"
+                                   android:hint="F"/>
+                               <EditText
+                                   style="@style/edit_table_gender"
+                                   android:id="@+id/Total__301"
+                                   android:hint="T"/>
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper"
+                               android:weightSum="10">
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="2.5"
+                                   android:textColor="?s_color"
+                                   android:text="Wages"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="2.5"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Other Cash"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="2.5"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Payment in Kind"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:enabled="false"
+                                   android:layout_weight="2.5"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Total"/>
+
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper"
+                               android:weightSum="10">
+                               <EditText
+                                   android:id="@+id/wage__301"
+                                   style="@style/edit_table_payment"/>
+                               <EditText
+                                   android:id="@+id/other__301"
+                                   style="@style/edit_table_payment"/>
+                               <EditText
+                                   android:id="@+id/kind__301"
+                                   style="@style/edit_table_payment"/>
+                               <EditText
+                                   android:id="@+id/ptotal__301"
+                                   style="@style/edit_table_payment"/>
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper">
+
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper">
+
+                           </LinearLayout><LinearLayout
+                           style="@style/horizontal_wrapper">
+
+                       </LinearLayout>
+
+                       </LinearLayout>
+
+                       <TextView
+                           android:textSize="?t_xl"
+                           android:gravity="center_horizontal"
+                           style="@style/summary_eng"
+                           android:layout_width="match_parent"
+                           android:text="Heading will go here"/>
+                       <LinearLayout
+                           style="@style/liner">
+                           <LinearLayout
+                               style="@style/horizontal_wrapper"
+                               android:weightSum="10">
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="6.6"
+                                   android:textColor="?s_color"
+                                   android:text="Employment status"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="1.2"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Male"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="1.2"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Female"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:enabled="false"
+                                   android:layout_weight="1.2"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Total"/>
+
+
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper"
+                               android:weightSum="10">
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="6.4"
+                                   android:text="Unpaid Family Workers"/>
+                               <EditText
+                                   style="@style/edit_table_gender"
+                                   android:id="@+id/Male__302"
+                                   android:hint="M"/>
+                               <EditText
+                                   style="@style/edit_table_gender"
+                                   android:id="@+id/Female__302"
+                                   android:hint="F"/>
+                               <EditText
+                                   style="@style/edit_table_gender"
+                                   android:id="@+id/Total__302"
+                                   android:hint="T"/>
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper"
+                               android:weightSum="10">
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="2.5"
+                                   android:textColor="?s_color"
+                                   android:text="Wages"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="2.5"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Other Cash"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:layout_weight="2.5"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Payment in Kind"/>
+                               <TextView
+                                   style="@style/summary_eng"
+                                   android:enabled="false"
+                                   android:layout_weight="2.5"
+                                   android:gravity="center_horizontal"
+                                   android:textColor="?s_color"
+                                   android:text="Total"/>
+
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper"
+                               android:weightSum="10">
+                               <EditText
+                                   android:id="@+id/wage__302"
+                                   style="@style/edit_table_payment"/>
+                               <EditText
+                                   android:id="@+id/other__302"
+                                   style="@style/edit_table_payment"/>
+                               <EditText
+                                   android:id="@+id/kind__302"
+                                   style="@style/edit_table_payment"/>
+                               <EditText
+                                   android:id="@+id/ptotal__302"
+                                   style="@style/edit_table_payment"/>
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper">
+
+                           </LinearLayout>
+                           <LinearLayout
+                               style="@style/horizontal_wrapper">
+
+                           </LinearLayout><LinearLayout
+                           style="@style/horizontal_wrapper">
+
+                       </LinearLayout>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+
+                    <include layout="@layout/layout_form_buttons"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

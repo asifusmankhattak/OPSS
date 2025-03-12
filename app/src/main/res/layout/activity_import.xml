@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    style="@style/parent_drawer"
+    tools:context="pbs.sme.survey.activity.ImportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/upper_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="?padd">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?padd">
+                <TextView
+                    android:id="@+id/user"
+                    style="@style/txt_lg"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:text="Enumerator: ______________"/>
+                <TextView
+                    android:id="@+id/network"
+                    style="@style/txt_lg"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:text="Network:"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="?padd"
+                android:layout_marginBottom="?padd">
+                <LinearLayout
+                    style="@style/cards"
+                    android:layout_weight="1"
+                    android:layout_marginRight="?attr/pad">
+                    <TextView
+                        style="@style/txt_lbl"
+                        android:text="Blocks"/>
+                    <TextView
+                        android:id="@+id/tblk"
+                        style="@style/txt_bg"
+                        android:text="00"/>
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/p_tblk"
+                        style="@style/cprogress"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/cards"
+                    android:layout_weight="1"
+                    android:layout_marginRight="?attr/pad"
+                    android:layout_marginLeft="?attr/pad">
+                    <TextView
+                        style="@style/txt_lbl"
+                        android:text="Started"/>
+                    <TextView
+                        android:id="@+id/sblk"
+                        style="@style/txt_bg"
+                        android:text="00"/>
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/p_sblk"
+                        style="@style/cprogress"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/cards"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="?attr/pad">
+                    <TextView
+                        style="@style/txt_lbl"
+                        android:text="Completed"/>
+
+                    <TextView
+                        android:id="@+id/fblk"
+                        style="@style/txt_bg"
+                        android:text="00"/>
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/p_fblk"
+                        style="@style/cprogress"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginBottom="?attr/padd">
+
+                <LinearLayout
+                    style="@style/cards"
+                    android:layout_weight="1"
+                    android:layout_marginRight="?attr/pad">
+
+                    <TextView
+                        style="@style/txt_lbl"
+                        android:text="Small"/>
+
+                    <TextView
+                        android:id="@+id/thh"
+                        style="@style/txt_bg"
+                        android:text="000"/>
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/p_thh"
+                        style="@style/cprogress"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/cards"
+                    android:layout_marginLeft="?attr/pad"
+                    android:layout_marginRight="?attr/pad"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/txt_lbl"
+                        android:text="Medium" />
+
+                    <TextView
+                        android:id="@+id/th"
+                        style="@style/txt_bg"
+                        android:text="000"/>
+
+                    <ProgressBar
+                        android:id="@+id/p_th"
+                        style="@style/cprogress"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/cards"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="?attr/pad">
+                    <TextView
+                        style="@style/txt_lbl"
+                        android:text="Uploaded"/>
+
+                    <TextView
+                        android:id="@+id/uhh"
+                        style="@style/txt_bg"
+                        android:text="000" />
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/p_uhh"
+                        style="@style/cprogress"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:id="@+id/impDate"
+                    style="@style/txt_md"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:text="Last Import"/>
+                <TextView
+                    android:id="@+id/entDate"
+                    style="@style/txt_md"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Last Entry "/>
+                <TextView
+                    android:id="@+id/synDate"
+                    style="@style/txt_md"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:text="Last Sync"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/load"
+                style="@style/sbtn"
+                android:drawableLeft="@drawable/ic_load"
+                android:drawableRight="@drawable/ic_load"
+                android:text="@string/import_from_online"
+                android:onClick="ImportData"/>
+            <TextView
+                android:id="@+id/txt_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone"
+                android:layout_margin="?attr/pad"
+                android:textSize="?attr/t_md"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/block_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/upper_area"
+            android:layout_marginHorizontal="?padd"
+            android:layout_marginStart="?padd"
+            android:layout_marginTop="?padd"
+            android:layout_marginEnd="?padd"
+            android:layout_marginBottom="?padd"/>
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer"/>
+    </RelativeLayout>
+    <include layout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+

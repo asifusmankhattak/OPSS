@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    style="@style/parent_drawer"
+    tools:context="pbs.sme.survey.activity.BlockActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/header"
+            style="@style/summary_container"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_border"
+            android:padding="?padd"
+            android:layout_marginBottom="?padd">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="2"
+                    android:text="Block:"
+                    android:textColor="?s_color"
+                    android:layout_marginBottom="0dp"/>
+                <TextView
+                    android:id="@+id/tv_block_code"
+                    style="@style/summary_txt_md"
+                    android:layout_weight="3"
+                    android:text=""/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="2"
+                    android:text="Status: "
+                    android:textColor="?s_color"/>
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/summary_txt_md"
+                    android:layout_weight="3"
+                    android:text=""/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="2"
+                    android:text="Start Date: "
+                    android:textColor="?s_color"
+                    android:layout_marginBottom="0dp"/>
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    style="@style/summary_txt_md"
+                    android:layout_weight="3"
+                    android:text=""/>
+                <TextView
+                    style="@style/summary_txt_md"
+                    android:layout_weight="2"
+                    android:text="End Date:"
+                    android:textColor="?s_color"/>
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    style="@style/summary_txt_md"
+                    android:layout_weight="3"
+                    android:text=""/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/txt_md"
+                android:padding="?attr/pad"
+                android:justificationMode="inter_word"
+                android:text="Address: Village Tobah, Patwar Circle Tobah, Qanoongo Pind Dadan Khan, Tehsil Pind Dadan Khan, District Jhelum, Province Punjab "/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:layout_above="@+id/btn"
+            android:layout_marginHorizontal="?attr/padd"
+            android:background="@drawable/rounded_border">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnLocateCurrentPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                app:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/ic_current_location" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnLocateBoundary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="85sp"
+                app:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/baseline_map_24" />
+
+            <pk.gov.pbs.geomap.views.CustomOfflineMapView
+                android:id="@+id/mapviewOffline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <org.osmdroid.views.MapView
+                android:id="@+id/mapviewOnline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/map_text_overlay"
+                style="@style/summary_txt_md"
+                android:layout_width="match_parent"
+                android:text="آپ کے موجودہ مقام کا تعین کیا جا رہا ہے۔"
+                android:textColor="@color/black"
+                android:layout_marginTop="?padd"
+                android:gravity="center_horizontal"/>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn"
+            style="@style/sbtn"
+            android:layout_above="@+id/footer"
+            android:drawableLeft="@drawable/ic_right"
+            android:drawableRight="@drawable/ic_right"
+            android:onClick="continueBlock"
+            android:text="Continue" />
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer"/>
+    </RelativeLayout>
+    <include layout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

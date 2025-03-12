@@ -1,0 +1,11 @@
+[submodule "Utils"] 
+  path = Utils 
+  url = https://github.com/MuhZubairAli/Utils.git/
+
+[submodule "Database"] 
+  path = Database 
+  url = https://github.com/MuhZubairAli/Database.git/
+  
+[submodule "GeoMap"] 
+  path = GeoMap 
+  url = https://github.com/MuhZubairAli/GeoMap.git/
